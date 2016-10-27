@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E950F64B1DC10FD9008A7AD9 /* VacationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950F64A1DC10FD9008A7AD9 /* VacationCollectionViewController.swift */; };
+		E950F64D1DC11BAC008A7AD9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950F64C1DC11BAC008A7AD9 /* PhotoCollectionViewCell.swift */; };
+		E950F6521DC1436A008A7AD9 /* VacationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950F6511DC1436A008A7AD9 /* VacationImage.swift */; };
+		E96CF0731DC1C466007DB6F7 /* EditPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CF0721DC1C466007DB6F7 /* EditPhotoViewController.swift */; };
 		E9B717F41DC07AD500F567E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B717F31DC07AD500F567E2 /* AppDelegate.swift */; };
-		E9B717F61DC07AD500F567E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B717F51DC07AD500F567E2 /* ViewController.swift */; };
 		E9B717F91DC07AD500F567E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B717F71DC07AD500F567E2 /* Main.storyboard */; };
 		E9B717FC1DC07AD500F567E2 /* VacationSpots.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9B717FA1DC07AD500F567E2 /* VacationSpots.xcdatamodeld */; };
 		E9B717FE1DC07AD500F567E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B717FD1DC07AD500F567E2 /* Assets.xcassets */; };
 		E9B718011DC07AD500F567E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B717FF1DC07AD500F567E2 /* LaunchScreen.storyboard */; };
 		E9B7180C1DC07AD500F567E2 /* VacationSpotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7180B1DC07AD500F567E2 /* VacationSpotsTests.swift */; };
 		E9B718171DC07AD500F567E2 /* VacationSpotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B718161DC07AD500F567E2 /* VacationSpotsUITests.swift */; };
+		E9B718261DC07BB200F567E2 /* bread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9B718251DC07BB200F567E2 /* bread.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E950F64A1DC10FD9008A7AD9 /* VacationCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VacationCollectionViewController.swift; path = ../VacationCollectionViewController.swift; sourceTree = "<group>"; };
+		E950F64C1DC11BAC008A7AD9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewCell.swift; path = ../PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E950F6511DC1436A008A7AD9 /* VacationImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationImage.swift; sourceTree = "<group>"; };
+		E96CF0721DC1C466007DB6F7 /* EditPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditPhotoViewController.swift; path = ../EditPhotoViewController.swift; sourceTree = "<group>"; };
 		E9B717F01DC07AD500F567E2 /* VacationSpots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacationSpots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B717F31DC07AD500F567E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9B717F51DC07AD500F567E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9B717F81DC07AD500F567E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9B717FB1DC07AD500F567E2 /* VacationSpots.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VacationSpots.xcdatamodel; sourceTree = "<group>"; };
 		E9B717FD1DC07AD500F567E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 		E9B718121DC07AD500F567E2 /* VacationSpotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacationSpotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B718161DC07AD500F567E2 /* VacationSpotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationSpotsUITests.swift; sourceTree = "<group>"; };
 		E9B718181DC07AD500F567E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B718251DC07BB200F567E2 /* bread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bread.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E950F6501DC12FFB008A7AD9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E950F64A1DC10FD9008A7AD9 /* VacationCollectionViewController.swift */,
+				E96CF0721DC1C466007DB6F7 /* EditPhotoViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		E9B717E71DC07AD500F567E2 = {
 			isa = PBXGroup;
 			children = (
+				E9B717F71DC07AD500F567E2 /* Main.storyboard */,
 				E9B717F21DC07AD500F567E2 /* VacationSpots */,
 				E9B7180A1DC07AD500F567E2 /* VacationSpotsTests */,
 				E9B718151DC07AD500F567E2 /* VacationSpotsUITests */,
@@ -99,13 +117,15 @@
 		E9B717F21DC07AD500F567E2 /* VacationSpots */ = {
 			isa = PBXGroup;
 			children = (
+				E950F6511DC1436A008A7AD9 /* VacationImage.swift */,
+				E950F6501DC12FFB008A7AD9 /* Main */,
+				E950F64C1DC11BAC008A7AD9 /* PhotoCollectionViewCell.swift */,
 				E9B717F31DC07AD500F567E2 /* AppDelegate.swift */,
-				E9B717F51DC07AD500F567E2 /* ViewController.swift */,
-				E9B717F71DC07AD500F567E2 /* Main.storyboard */,
 				E9B717FD1DC07AD500F567E2 /* Assets.xcassets */,
 				E9B717FF1DC07AD500F567E2 /* LaunchScreen.storyboard */,
 				E9B718021DC07AD500F567E2 /* Info.plist */,
 				E9B717FA1DC07AD500F567E2 /* VacationSpots.xcdatamodeld */,
+				E9B718251DC07BB200F567E2 /* bread.jpg */,
 			);
 			path = VacationSpots;
 			sourceTree = "<group>";
@@ -191,11 +211,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = colbyg;
 				TargetAttributes = {
 					E9B717EF1DC07AD500F567E2 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6BTW725B4B;
 						ProvisioningStyle = Automatic;
 					};
 					E9B718061DC07AD500F567E2 = {
@@ -237,6 +258,7 @@
 			files = (
 				E9B718011DC07AD500F567E2 /* LaunchScreen.storyboard in Resources */,
 				E9B717FE1DC07AD500F567E2 /* Assets.xcassets in Resources */,
+				E9B718261DC07BB200F567E2 /* bread.jpg in Resources */,
 				E9B717F91DC07AD500F567E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9B717F61DC07AD500F567E2 /* ViewController.swift in Sources */,
+				E950F6521DC1436A008A7AD9 /* VacationImage.swift in Sources */,
+				E950F64D1DC11BAC008A7AD9 /* PhotoCollectionViewCell.swift in Sources */,
+				E96CF0731DC1C466007DB6F7 /* EditPhotoViewController.swift in Sources */,
+				E950F64B1DC10FD9008A7AD9 /* VacationCollectionViewController.swift in Sources */,
 				E9B717FC1DC07AD500F567E2 /* VacationSpots.xcdatamodeld in Sources */,
 				E9B717F41DC07AD500F567E2 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +331,7 @@
 				E9B717F81DC07AD500F567E2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = VacationSpots;
 			sourceTree = "<group>";
 		};
 		E9B717FF1DC07AD500F567E2 /* LaunchScreen.storyboard */ = {
@@ -337,6 +363,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,6 +414,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -416,6 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6BTW725B4B;
 				INFOPLIST_FILE = VacationSpots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.VacationSpots;
@@ -428,6 +458,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6BTW725B4B;
 				INFOPLIST_FILE = VacationSpots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.colbyg.VacationSpots;
@@ -509,6 +541,7 @@
 				E9B7181D1DC07AD500F567E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9B7181E1DC07AD500F567E2 /* Build configuration list for PBXNativeTarget "VacationSpotsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +550,7 @@
 				E9B718201DC07AD500F567E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9B718211DC07AD500F567E2 /* Build configuration list for PBXNativeTarget "VacationSpotsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +559,7 @@
 				E9B718231DC07AD500F567E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

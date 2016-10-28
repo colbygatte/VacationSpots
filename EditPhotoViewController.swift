@@ -19,7 +19,7 @@ class EditPhotoViewController: UIViewController, UIImagePickerControllerDelegate
     
     var imagePicker: UIImagePickerController!
     
-    var photo: UIImage!
+    //var photo: UIImage!
     var vacationImage: VacationImage!
     
     @IBOutlet var descriptionTextField: UITextField!
@@ -68,7 +68,7 @@ class EditPhotoViewController: UIViewController, UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         print(info)
         
-        photo = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        let photo = info[UIImagePickerControllerOriginalImage] as! UIImage?
         
         photoImageView.image = photo!
         vacationImage.image = photo
@@ -76,13 +76,44 @@ class EditPhotoViewController: UIViewController, UIImagePickerControllerDelegate
         picker.dismiss(animated: true, completion: nil)
     }
     
+    /***  ***/
+    @IBAction func sepiaButtonPressed() {
+        let newImage = makeMeSepia(image: vacationImage.image)
+        photoImageView.image = newImage
+        vacationImage.image = newImage
+    }
+    
+    func makeMeSepia(image: UIImage) -> UIImage {
+        let context = CIContext(options: nil)
+        
+        let currentFilter = CIFilter(name: "CISepiaTone")
+        let beginImage = CIImage(image: image)
+        
+        currentFilter?.setValue(beginImage, forKey: kCIInputImageKey)
+        currentFilter?.setValue(0.5, forKey: kCIInputIntensityKey)
+        
+        let output = currentFilter?.outputImage
+        
+        let cgimg = context.createCGImage(output!, from: (output?.extent)!)
+        
+        let processedImage = UIImage(cgImage: cgimg!)
+        
+        return processedImage
+    }
+    
     
     @IBAction func saveButtonPressed() {
         vacationImage.imageDescription = descriptionTextField.text
         delegate?.editPhotoViewControllerDelelgateDidSave()
-        
+        dismiss(animated: true, completion: nil)
     }
     
+/***********
+* NEXT!!!!
+*
+* Create the "Save" button 
+* to call the delegate and dismiss the view controller
+***********/
     
     override func viewDidLoad() {
         super.viewDidLoad()

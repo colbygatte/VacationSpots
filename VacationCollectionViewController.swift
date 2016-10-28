@@ -14,7 +14,14 @@ private let reuseIdentifier = "myCell"
 class VacationCollectionViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, EditPhotoViewControllerDelegate {
 
     var images: [VacationImage]!
-    var imagePicker: UIImagePickerController!
+    //var imagePicker: UIImagePickerController!
+    
+    @IBAction func addVacationPhotoButtoPressed() {
+        let newImage = VacationImage(UIImage(), description: "Add Description")
+        images.append(newImage)
+        collectionView?.reloadData()
+    }
+    
     
     func editPhotoViewControllerDelelgateDidSave() {
         print("111 save photo delegate called")
@@ -47,6 +54,7 @@ class VacationCollectionViewController: UICollectionViewController, UIImagePicke
             
             editPhotoVC.delegate = self
             editPhotoVC.vacationImage = images[(indexPath?.row)!] as VacationImage
+            
         }
     }
     
